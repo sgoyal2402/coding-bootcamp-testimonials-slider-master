@@ -1,0 +1,133 @@
+body{
+    background-image: url("images/pattern-bg.svg"), url("images/pattern-quotes.svg"), url("images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: 90%, 20% 30%, bottom left;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Inter';
+}
+
+.one{
+    height: 540px;
+    width: 540px;
+    border-radius: 13px;
+    background-image: url("images/image-tanya.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 10%;
+    top: 18%;
+}
+
+.two{
+    height: 540px;
+    width: 540px;
+    border-radius: 13px;
+    background-image: url("images/image-john.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 10%;
+    top: 18%;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    width: 100px;
+    background-color: #fff;
+    padding: 15px 1px;
+    /* border-style: solid; */
+    position: absolute;
+    bottom: 8%;
+    right: 33%;
+    box-shadow: 0 0 5px 0 hsl(240, 18%, 77%);
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.text{
+    left: 200px;
+    top: 230px;
+    position: relative;
+    width: 47%;
+    color: hsl(240, 38%, 20%);
+}
+.text p{
+    
+    font-weight: 300;
+    font-size: 2.25rem;
+
+}
+
+.name{
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-right: 15px;
+}
+
+.job{
+    color: hsl(240, 18%, 77%);
+}
+
+.hidden{
+    display: none;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 10px;
+    left: 500px;
+    text-align: center;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        background-size: 96%, 15%;
+        background-position: 12% 10%,center 53%,bottom;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .one, .two{
+        width: 75%;
+        background-size: 100%;
+        top: 10%
+    }
+    
+    .text::before{
+        height: 50vh;
+        width: 100%;
+        display: block;
+        content: "";
+    }
+    
+    .text{
+        /* display: none; */
+        position: static;
+        width: 90%;
+        text-align: center;
+        margin: 5px auto;
+    }
+
+    .text p{
+        font-size: 21px;
+    }
+
+    .name{
+        font-size: 1rem;
+    }
+    span{
+        display: block;
+    }
+
+    .btn{
+        position: absolute;
+        top: 42%;
+        bottom: 52%;
+        right: 40%;
+
+    }
+}
